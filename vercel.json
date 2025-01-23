@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "server.js"
+    }
+  ],
+  "env": {
+    "MONGO_URI": "mongodb+srv://imtiyazagasimani:imtiyazagasimani@cluster0.c6iah.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/contactForm",
+    "EMAIL_USER": "imtiyazagasimani26@gmail.com",
+    "EMAIL_PASS": "halvfdfqjwpneoad"
+  }
+}
